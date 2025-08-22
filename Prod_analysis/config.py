@@ -34,3 +34,5 @@ lat_band_dict = {'Tropics':[-23, 23],
                  'Global':[-91, 91],
                  'NH':[0, 91],
                  'SH':[-91, 0]}
+
+regions = ['Global', 'Arctic', 'Tropics', 'NH', 'SH', 'Antarctic']

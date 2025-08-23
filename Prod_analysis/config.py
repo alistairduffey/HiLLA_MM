@@ -21,6 +21,10 @@ model_colors = {'UKESM':'salmon',
                 'CESM':'lightskyblue',
                 'E3SM':'seagreen'}
 
+dark_model_colors = {'UKESM':'orangered',
+                     'CESM':'deepskyblue',
+                     'E3SM':'seagreen'}
+
 models = ['UKESM', 'CESM', 'E3SM']
 model_names = {'UKESM':'UKESM1', 'CESM':'CESM2-WACCM', 'E3SM':'E3SMv3'}
 

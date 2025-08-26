@@ -10,6 +10,10 @@ UKESM_arise_inj_logs_path = '../../Extra_data/ARISE_injection_stats/UKESM_feedba
 CESM_arise_inj_logs_path = '../../Extra_data/ARISE_injection_stats/CESM_feedback_stats/'
 HiLLA_inj_mag = 12 # Tg per year total (6Tg per hemisphere)
 
+ens_mems_UK_ssp245_all = ['r10i1p1f2','r11i1p1f2','r12i1p1f2','r16i1p1f2',
+                          'r17i1p1f2','r18i1p1f2','r19i1p1f2','r1i1p1f2',
+                          'r2i1p1f2','r3i1p1f2','r4i1p1f2','r5i1p1f2',
+                          'r6i1p1f2','r7i1p1f2','r8i1p1f2','r9i1p1f2']
 
 ### Settings
 colours = {'ssp245':'gray',

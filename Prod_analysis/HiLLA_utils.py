@@ -55,3 +55,19 @@ def get_ssp245_ds(model, centre, variable, members, table='Amon', grid='gn'):
     
     DS = xr.concat(ds_list, dim='Ensemble_member')
     return DS
+
+def get_slice_annual_mean(DS):
+    DS = DS.sel(time=slice('2015', '2069'))
+    return DS.groupby('time.year').mean('time').load()
+
+def get_time_slice_mean(ds):
+    time_slice = ds.sel(time=slice('2051', '2069'))
+    mean_values = time_slice.mean(dim='time')
+    return mean_values
+
+def yearly_timeseries(ds, region):
+    ds_ts = ds.sel(latitude=slice(lat_band_dict[region][0], lat_band_dict[region][1])).mean(dim=['longitude'])
+    ds_ts_yearly = ds_ts.groupby('time.year').mean('time').load()
+    weights = np.cos(np.deg2rad(ds_ts_yearly['latitude']))
+    ds_ts_yearly = ds_ts_yearly.weighted(weights).mean(dim='latitude')
+    return ds_ts_yearly

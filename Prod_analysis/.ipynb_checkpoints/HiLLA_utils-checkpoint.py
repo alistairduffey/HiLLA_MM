@@ -15,7 +15,7 @@ from Utils import get_ds_from_ceda
 from config import lat_band_dict
 
 def get_ds(run, var, table, zonal_mean=False):
-    file = '/gws/nopw/j04/cpom/aduffey/pp_archive_hills/{r}/{t}/{v}/{r}_{v}.nc'.format(r=run, t=table, v=var)
+    file = '/gws/ssde/j25b/cpom/aduffey/pp_archive_hills/{r}/{t}/{v}/{r}_{v}.nc'.format(r=run, t=table, v=var)
     ds = xr.open_dataset(file)
     if zonal_mean:
         ds = ds.mean(dim='longitude')
@@ -71,3 +71,4 @@ def yearly_timeseries(ds, region):
     weights = np.cos(np.deg2rad(ds_ts_yearly['latitude']))
     ds_ts_yearly = ds_ts_yearly.weighted(weights).mean(dim='latitude')
     return ds_ts_yearly
+

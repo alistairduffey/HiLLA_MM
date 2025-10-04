@@ -1,5 +1,5 @@
 # inputs
-path_archive = '/gws/nopw/j04/cpom/aduffey/pp_archive_hills/'
+path_archive = '/gws/ssde/j25b/cpom/aduffey/pp_archive_hills/'
 UKESM_ARISE_run_IDs = ['cl322', 'cl458', 'cl459', 'cl460', 'cl461']
 UKESM_ARISE_run_dict = {'cl322':'r1i1p1f2', 'cl458':'r2i1p1f2', 'cl459':'r3i1p1f2',
                         'cl460':'r4i1p1f2', 'cl461':'r8i1p1f2'}
@@ -19,7 +19,8 @@ ens_mems_UK_ssp245_all = ['r10i1p1f2','r11i1p1f2','r12i1p1f2','r16i1p1f2',
 colours = {'ssp245':'gray',
            'ssp245_light':'lightgray',
            'HiLLA_13':'red',
-           'HiLLA_15':'green'}
+           'HiLLA_15':'green',
+           'ARISE':'purple'}
 
 model_colors = {'UKESM':'salmon',
                 'CESM':'lightskyblue',

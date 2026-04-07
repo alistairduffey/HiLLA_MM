@@ -4,7 +4,7 @@ UKESM_ARISE_run_IDs = ['cl322', 'cl458', 'cl459', 'cl460', 'cl461']
 UKESM_ARISE_run_dict = {'cl322':'r1i1p1f2', 'cl458':'r2i1p1f2', 'cl459':'r3i1p1f2',
                         'cl460':'r4i1p1f2', 'cl461':'r8i1p1f2'}
 ens_mems_arise_UK = ['r1i1p1f2', 'r2i1p1f2', 'r3i1p1f2', 'r4i1p1f2', 'r8i1p1f2']
-CESM_ARISE_run_IDs = ['001', '002', '003', '004', '005'] # note there ten members, but we use only 5 here to align UKESM
+CESM_ARISE_run_IDs = ['001', '002', '003', '004', '005'] # note there ten members, but we use only 5 here to align with UKESM
 ens_mems_CE = ['r1i1p1f1', 'r2i1p1f1', 'r3i1p1f1', 'r4i1p1f1', 'r5i1p1f1']
 UKESM_arise_inj_logs_path = '../../Extra_data/ARISE_injection_stats/UKESM_feedback_stats/'
 CESM_arise_inj_logs_path = '../../Extra_data/ARISE_injection_stats/CESM_feedback_stats/'
